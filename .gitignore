@@ -1,0 +1,25 @@
+# MATLAB temporary and generated files
+*.asv
+*.autosave
+*.m~
+*.mex*
+*.slxc
+slprj/
+codegen/
+work/
+
+# Generated MATLAB workspaces
+results/data/*.mat
+
+# MATLAB figure files
+*.fig
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Archives
+*.rar
+*.zip
