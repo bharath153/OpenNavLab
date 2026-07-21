@@ -163,7 +163,7 @@ Large generated `.mat` files are intentionally excluded from this GitHub-ready p
 - [Limitations and future work](docs/limitations_and_future_work.md)
 - [Repository audit](docs/repository_audit.md)
 - [Reproducibility and runtime](docs/reproducibility.md)
-- [Application-ready project summary](docs/application_summary.md)
+
 
 ## Reproducibility
 
