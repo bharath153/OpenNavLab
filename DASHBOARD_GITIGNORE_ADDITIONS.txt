@@ -1,0 +1,8 @@
+# Optional OpenNavLab dashboard additions for your existing .gitignore
+
+# Keep generated evidence packages outside the repository if you export into it.
+OpenNavLab_Evidence_*/
+
+# MATLAB temporary/editor files
+*.asv
+*.autosave

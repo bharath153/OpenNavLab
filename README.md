@@ -136,6 +136,42 @@ At 1 Hz, quantum bias-reference updates reduced the single-run maximum outage er
 
 ![Quantum NIS consistency](results/figures/phase7d_quantum_nis_heatmap.png)
 
+
+## Interactive research dashboard
+
+OpenNavLab also includes a MATLAB dashboard for inspecting the saved experiments
+without moving estimator mathematics into the UI layer.
+
+The dashboard provides:
+
+- animated truth / classical / quantum-aided trajectory replay;
+- synchronized position, velocity and heading-error views;
+- MEMS-bias and innovation-consistency inspection;
+- project-evolution comparison across the classical and quantum-aided phases;
+- Phase 7C paired Monte Carlo exploration;
+- Phase 7D outage-duration / quantum-rate sensitivity analysis;
+- a built-in regression self-test and reproducible evidence export.
+
+The default dashboard views are backed by the saved OpenNavLab results. The
+Mission page contains a separately labelled **Preview** mode for interactive
+what-if visualization; preview cases are not presented as rerun EKF results.
+
+Run it with:
+
+```matlab
+cd dashboard
+app = run_opennavlab_dashboard;
+```
+
+For a GitHub-ready visual set, run:
+
+```matlab
+files = export_dashboard_screenshots(app);
+```
+
+This writes six live UI captures under
+[`docs/dashboard/screenshots/`](docs/dashboard/screenshots/). See the [dashboard documentation](docs/dashboard/README.md), including the [User guide](docs/dashboard/USER_GUIDE.md), [Architecture](docs/dashboard/ARCHITECTURE.md), [Validation](docs/dashboard/VALIDATION.md), and [Reproducibility](docs/dashboard/REPRODUCIBILITY.md).
+
 ## Repository structure
 
 ```text
@@ -146,7 +182,10 @@ OpenNavLab/
 ├── results/
 │   ├── data/     CSV summaries and paired-run data
 │   └── figures/  Generated validation figures
-├── docs/         Mathematical model, methodology and limitations
+├── dashboard/    Interactive replay, statistics, validation and evidence UI
+├── docs/
+│   ├── dashboard/  Dashboard usage and screenshot workflow
+│   └── ...         Mathematical model, methodology and limitations
 ├── startup.m     Adds project folders to the MATLAB path
 └── README.md
 ```
@@ -163,7 +202,8 @@ Large generated `.mat` files are intentionally excluded from this GitHub-ready p
 - [Limitations and future work](docs/limitations_and_future_work.md)
 - [Repository audit](docs/repository_audit.md)
 - [Reproducibility and runtime](docs/reproducibility.md)
-
+- [Application-ready project summary](docs/application_summary.md)
+- [Interactive dashboard](docs/dashboard/README.md)
 
 ## Reproducibility
 

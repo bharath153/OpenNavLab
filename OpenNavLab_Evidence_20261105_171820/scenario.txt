@@ -1,0 +1,6 @@
+OpenNavLab Dashboard Evidence Package
+Generated: 05-Nov-2026 17:18:21
+Source: OpenNavLab Phase 7B compact dashboard snapshot
+Outage: 50.000 to 70.000 s
+Quantum rate: 1.000 Hz
+Note: this package captures the currently loaded case; it does not rerun any estimator.
