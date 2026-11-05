@@ -156,6 +156,10 @@ The default dashboard views are backed by the saved OpenNavLab results. The
 Mission page contains a separately labelled **Preview** mode for interactive
 what-if visualization; preview cases are not presented as rerun EKF results.
 
+![OpenNavLab interactive research dashboard](docs/dashboard/screenshots/01_overview.png)
+
+> Dashboard v1.0.2 was regression-tested with **15/15 checks passing**, successful screenshot export, and clean playback-timer shutdown.
+
 Run it with:
 
 ```matlab
@@ -202,7 +206,6 @@ Large generated `.mat` files are intentionally excluded from this GitHub-ready p
 - [Limitations and future work](docs/limitations_and_future_work.md)
 - [Repository audit](docs/repository_audit.md)
 - [Reproducibility and runtime](docs/reproducibility.md)
-- [Application-ready project summary](docs/application_summary.md)
 - [Interactive dashboard](docs/dashboard/README.md)
 
 ## Reproducibility
