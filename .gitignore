@@ -23,3 +23,6 @@ Thumbs.db
 # Archives
 *.rar
 *.zip
+
+# Generated dashboard evidence packages
+OpenNavLab_Evidence_*/
