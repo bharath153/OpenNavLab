@@ -1,11 +1,11 @@
 function app = build_dashboard(caseSource)
-%BUILD_DASHBOARD Build the OpenNavLab Dashboard v0.1 UI.
+%BUILD_DASHBOARD Build the OpenNavLab Dashboard v1.0.2 UI.
 
     if nargin < 1
         caseSource = [];
     end
 
-    dashboardVersion = '1.0.1';
+    dashboardVersion = '1.0.2';
 
     theme = dashboard_theme();
     data = load_dashboard_case(caseSource);
