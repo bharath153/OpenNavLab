@@ -1,6 +1,0 @@
-OpenNavLab Dashboard v1.0.1
-Generated: 05-Nov-2026 17:18:21
-Single-run source: OpenNavLab Phase 7B compact dashboard snapshot
-Monte Carlo source: Published OpenNavLab Phase 7C paired runs
-Sensitivity source: Published OpenNavLab Phase 7D sensitivity summary
-Self-test: PASS - 15/15 checks passed.
