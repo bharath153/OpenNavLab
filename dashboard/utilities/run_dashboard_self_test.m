@@ -1,5 +1,5 @@
 function result = run_dashboard_self_test(fig)
-%RUN_DASHBOARD_SELF_TEST Non-destructive v1.0 regression/provenance checks.
+%RUN_DASHBOARD_SELF_TEST Non-destructive v1.0.2 regression/provenance checks.
 
     result = struct('passed',true,'checks',{{}},'failures',{{}});
 
@@ -10,7 +10,7 @@ function result = run_dashboard_self_test(fig)
 
     app = fig.UserData;
 
-    result = check(result,strcmp(app.Version,'1.0.1'),'Dashboard version is 1.0.1.');
+    result = check(result,strcmp(app.Version,'1.0.2'),'Dashboard version is 1.0.2.');
 
     timers = timerfindall('Name','OpenNavLab navigation playback');
     result = check(result,numel(timers)==1, ...
